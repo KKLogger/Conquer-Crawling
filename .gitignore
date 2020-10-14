@@ -1,1 +1,4 @@
 chromedriver.exe
+*.josn
+*.xml
+*.csv

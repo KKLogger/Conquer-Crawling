@@ -1,4 +1,4 @@
-# Scrapy settings for ecommerce project
+# Scrapy settings for carInfo project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,25 +7,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'ecommerce'
+BOT_NAME = 'carInfo'
 
-SPIDER_MODULES = ['ecommerce.spiders']
-NEWSPIDER_MODULE = 'ecommerce.spiders'
-
-# ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
-# ADD
-FEED_EXPORT_ENCODING = 'utf-8-sig'
-FEED_EXPORT_FIELDS = ['main_category_name', 'sub_category_name',
-                      'rank', 'o_price', 's_price', 'sale_percent']
-# ITEM_PIPELINES = {'ecommerce.pipelines.EcommercePipeline': 300, }
+SPIDER_MODULES = ['carInfo.spiders']
+NEWSPIDER_MODULE = 'carInfo.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'ecommerce (+http://www.yourdomain.com)'
+#USER_AGENT = 'carInfo (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
-LOG_FILE = 'log.txt'
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -45,34 +37,34 @@ LOG_FILE = 'log.txt'
 #TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
-# DEFAULT_REQUEST_HEADERS = {
+#DEFAULT_REQUEST_HEADERS = {
 #   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
 #   'Accept-Language': 'en',
-# }
+#}
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-# SPIDER_MIDDLEWARES = {
-#    'ecommerce.middlewares.EcommerceSpiderMiddleware': 543,
-# }
+#SPIDER_MIDDLEWARES = {
+#    'carInfo.middlewares.CarinfoSpiderMiddleware': 543,
+#}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-# DOWNLOADER_MIDDLEWARES = {
-#    'ecommerce.middlewares.EcommerceDownloaderMiddleware': 543,
-# }
+#DOWNLOADER_MIDDLEWARES = {
+#    'carInfo.middlewares.CarinfoDownloaderMiddleware': 543,
+#}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
-# EXTENSIONS = {
+#EXTENSIONS = {
 #    'scrapy.extensions.telnet.TelnetConsole': None,
-# }
+#}
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'ecommerce.pipelines.EcommercePipeline': 300,
-# }
+#ITEM_PIPELINES = {
+#    'carInfo.pipelines.CarinfoPipeline': 300,
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

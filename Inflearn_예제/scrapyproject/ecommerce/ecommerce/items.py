@@ -9,6 +9,10 @@ import scrapy
 class EcommerceItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-
-    title = scrapy.Field()
-    price = scrapy.Field()
+    main_category_name = scrapy.Field()
+    sub_category_name = scrapy.Field()
+    rank = scrapy.Field()
+    name = scrapy.Field()
+    o_price = scrapy.Field()
+    s_price = scrapy.Field()
+    sale_percent = scrapy.Field()
